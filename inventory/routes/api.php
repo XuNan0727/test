@@ -14,3 +14,8 @@ Route::group([
     Route::post('me', 'AuthController@me');
 
 });
+
+Route::resource('/employee', 'Api\EmployeeController');
+Route::resource('/supplier', 'Api\SupplierController');
+Route::resource('/category', 'Api\CategoryController');
+Route::resource('/product', 'Api\ProductController');
